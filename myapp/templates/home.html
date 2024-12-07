@@ -1,0 +1,57 @@
+
+ {% extends 'base.html' %}
+
+ {% block tittle %}Home{% endblock %}
+
+{% block content %}
+{#    page specific#}
+
+
+<section class="search-section">
+  <form class="search-form">
+    <input
+      type="text"
+      name="search"
+      placeholder="Search for a product..."
+      class="search-box"
+      required>
+    <button type="submit" class="search-button">Search</button>
+  </form>
+</section>
+
+<section class="comparison-table">
+  <h2>Price Comparison</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Jumia</th>
+        <th>Kilimall</th>
+        <th>Copia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Smartphone</td>
+        <td>$200</td>
+        <td>$210</td>
+        <td>$205</td>
+      </tr>
+      <tr>
+        <td>Headphones</td>
+        <td>$50</td>
+        <td>$48</td>
+        <td>$52</td>
+      </tr>
+      <tr>
+        <td>Smartwatch</td>
+        <td>$150</td>
+        <td>$155</td>
+        <td>$149</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+{% endblock %}
